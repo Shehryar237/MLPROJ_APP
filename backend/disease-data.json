@@ -1,0 +1,17 @@
+{
+    "Healthy": {
+        "full_name": "Early-Stage Knee Arthritis",
+        "description": "Little to no signs of knee damage. Possible early-stage knee arthritis, characterized by minor wear and tear of the knee joint, leading to slight pain and stiffness.",
+        "severity": "mild"
+    },
+    "Moderate": {
+        "full_name": "Moderate Knee Arthritis",
+        "description": "Moderate knee arthritis involves more significant degradation of the knee joint, resulting in increased pain, swelling, and reduced mobility. Treatment options may include medications, corticosteroid injections, and possibly partial knee replacement.",
+        "severity": "moderate"
+    },
+    "Severe": {
+        "full_name": "Severe Knee Arthritis",
+        "description": "Severe knee arthritis entails extensive damage to the knee joint, causing constant pain, substantial swelling, and limited mobility. At this stage, surgical interventions such as total knee replacement are often necessary to restore function and alleviate pain.",
+        "severity": "severe"
+    }
+}
