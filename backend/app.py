@@ -24,12 +24,12 @@ CLASS_LABELS = ["Healthy", "Moderate", "Severe"]
 
 def load_model():
     global rf_model, scaler
-    model_path = './model/rf_model_and_scaler/trained_rf_model.joblib'  
-    scaler_path = './model/rf_model_and_scaler/scaler.joblib'          
+    model_path = './model/svm_model_and_scaler/svm_model_C10_rbf.joblib'  
+    scaler_path = './model/svm_model_and_scaler/scaler.joblib'          
 
     try:
         if not os.path.exists(model_path):
-            print(f"Random Forest model file does not exist at the specified path: {model_path}")
+            print(f"model file does not exist at the specified path: {model_path}")
             rf_model = None
             return
         if not os.path.exists(scaler_path):
@@ -37,9 +37,9 @@ def load_model():
             scaler = None
             return
 
-        print(f"Loading Random Forest model from {os.path.abspath(model_path)}")
+        print(f"Loading model from {os.path.abspath(model_path)}")
         rf_model = joblib.load(model_path)
-        print("Random Forest model loaded successfully.")
+        print("model loaded successfully.")
 
         print(f"Loading scaler from {os.path.abspath(scaler_path)}")
         scaler = joblib.load(scaler_path)
